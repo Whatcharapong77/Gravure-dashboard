@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Briefing — Gravure</title>
+<link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;600;700&family=Bebas+Neue&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0a1628;--card:#0f1f38;--c2:#132240;--bdr:#1e3a5f;
+--blue:#2d82e8;--grn:#10b981;--red:#ef4444;--yel:#f59e0b;
+--txt:#e2eaf5;--muted:#5b7fa6;--acc:#38bdf8;--pur:#8b5cf6}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"Sarabun",sans-serif;background:var(--bg);color:var(--txt);min-height:100vh}
+.br{display:flex;flex-direction:column;gap:8px;padding:10px 14px;min-height:100vh}
+.brhdr{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--bdr);padding-bottom:6px}
+.brtitle{font-family:"Bebas Neue";font-size:1.6rem;letter-spacing:2px;color:var(--acc)}
+.brsub{font-size:0.7rem;color:var(--muted);margin-top:2px}
+.back{background:var(--c2);border:1px solid var(--bdr);color:var(--acc);border-radius:5px;padding:6px 14px;font-family:"Sarabun";font-size:0.78rem;cursor:pointer;text-decoration:none;display:inline-block}
+.back:hover{background:#1e3a5f}
+.focus{background:linear-gradient(135deg,#7f1d1d 0%,#991b1b 100%);border:1px solid #dc2626;border-radius:8px;padding:10px 14px}
+.focus-hd{display:flex;align-items:center;gap:8px;font-weight:700;font-size:0.85rem;color:#fee2e2;margin-bottom:8px;letter-spacing:1px}
+.focus-hd .pulse{width:8px;height:8px;background:#fca5a5;border-radius:50%;animation:pulse 1.5s infinite}
+.focus-row{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.focus-card{background:rgba(0,0,0,.25);border:1px solid rgba(252,165,165,.3);border-radius:6px;padding:8px 10px}
+.focus-rank{font-family:"Bebas Neue";font-size:1rem;color:#fca5a5;letter-spacing:2px}
+.focus-item{font-family:monospace;font-size:0.62rem;color:#fde68a;margin-top:2px}
+.focus-name{font-size:0.78rem;font-weight:600;color:#fff;margin:3px 0;line-height:1.3}
+.focus-why{font-size:0.65rem;color:#fecaca}
+.focus-empty{padding:6px;font-size:0.72rem;color:#fecaca;font-style:italic;text-align:center}
+.sbar{display:flex;align-items:center;gap:5px;background:var(--card);border:1px solid var(--bdr);border-radius:6px;padding:6px 10px;flex-wrap:wrap}
+.bdg{display:inline-block;padding:2px 7px;border-radius:6px;font-size:0.62rem;font-weight:600}
+.b-r{background:rgba(239,68,68,.2);color:#ef4444}.b-a{background:rgba(245,158,11,.2);color:#f59e0b}
+.b-g{background:rgba(16,185,129,.2);color:#10b981}.b-x{background:rgba(255,255,255,.07);color:#6b7a90}
+.b-c{background:rgba(56,189,248,.15);color:#38bdf8}.b-p{background:rgba(139,92,246,.2);color:#a78bfa}
+.mgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px;flex:1;min-height:0}
+.mc{background:var(--card);border:1px solid var(--bdr);border-radius:8px;display:flex;flex-direction:column;overflow:hidden}
+.mh{padding:7px 12px;display:flex;align-items:center;gap:8px;border-bottom:1px solid var(--bdr)}
+.msc{flex:1;overflow-y:auto}
+.slbl{padding:5px 12px;font-size:0.6rem;color:var(--muted);letter-spacing:1px;background:rgba(0,0,0,.25);border-bottom:1px solid rgba(255,255,255,.04);font-weight:600}
+.jc{border-bottom:1px solid rgba(255,255,255,.05);padding:9px 12px;border-left:3px solid #4b5563;transition:background .15s}
+.jc.hr{background:rgba(239,68,68,.05);border-left-color:#ef4444}
+.jc.ha{background:rgba(245,158,11,.04);border-left-color:#f59e0b}
+.jc.hg{border-left-color:#10b981}
+.jc:hover{background:rgba(255,255,255,.02)}
+.jc-top{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;margin-bottom:5px}
+.jc-left{flex:1;min-width:0}
+.jc-right{flex-shrink:0;text-align:right;display:flex;flex-direction:column;align-items:flex-end;gap:3px}
+.jc-id{font-family:monospace;font-size:0.6rem;color:var(--muted)}
+.jc-name{font-size:0.78rem;font-weight:600;color:var(--txt);line-height:1.35;margin:1px 0;word-break:break-word}
+.jc-target{font-family:"Bebas Neue";font-size:1.1rem;color:var(--txt);letter-spacing:1px;line-height:1}
+.jc-tu{font-size:0.55rem;color:var(--muted)}
+.jc-risk{font-size:0.65rem;line-height:1.55;color:#fbbf24;margin-top:5px;padding:6px 9px;background:rgba(245,158,11,.08);border-left:2px solid #f59e0b;border-radius:3px;white-space:pre-line}
+.jc-action{font-size:0.65rem;line-height:1.55;color:#6ee7b7;margin-top:4px;padding:6px 9px;background:rgba(16,185,129,.08);border-left:2px solid #10b981;border-radius:3px;white-space:pre-line}
+.jc-meta{display:flex;gap:6px;flex-wrap:wrap;margin-top:5px;align-items:center}
+.jc-level{font-size:0.6rem;font-weight:600;padding:2px 7px;border-radius:3px}
+.ni{color:#4b5563;font-style:italic;font-size:0.62rem;padding:6px 9px}
+.rb{display:inline-block;padding:2px 7px;border-radius:4px;font-size:0.6rem;font-weight:700}
+.nj{padding:14px;font-size:0.72rem;color:#374151;font-style:italic;text-align:center}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+
+.loading-screen{position:fixed;inset:0;background:var(--bg);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:14px;z-index:99999;font-family:"Sarabun"}
+.loading-screen.hide{display:none}
+.spin{width:36px;height:36px;border:3px solid var(--bdr);border-top-color:var(--acc);border-radius:50%;animation:spinKf 1s linear infinite}
+@keyframes spinKf{to{transform:rotate(360deg)}}
+.err-screen{position:fixed;inset:0;background:var(--bg);display:none;align-items:center;justify-content:center;flex-direction:column;gap:12px;z-index:99998;padding:20px;text-align:center}
+.err-screen.show{display:flex}
+.err-screen h2{color:var(--red);font-family:"Bebas Neue";letter-spacing:2px;font-size:1.4rem}
+.err-screen p{color:var(--muted);font-size:0.8rem;max-width:480px;line-height:1.6}
+.err-screen button{background:var(--blue);color:#fff;border:none;border-radius:5px;padding:7px 18px;font-family:"Sarabun";cursor:pointer;font-size:0.78rem}
+</style>
+</head>
+<body>
+
+<!-- ============ Loading / Error ============ -->
+<div class="loading-screen" id="loadingScreen">
+  <div class="spin"></div>
+  <div style="color:var(--muted);font-size:0.85rem;letter-spacing:1px">กำลังโหลดข้อมูล...</div>
+</div>
+<div class="err-screen" id="errScreen">
+  <h2>⚠ ไม่สามารถโหลดข้อมูลได้</h2>
+  <p id="errMsg"></p>
+  <button onclick="location.reload()">ลองใหม่</button>
+</div>
+
+<!-- ============ Briefing ============ -->
+<div class="br" id="brApp" style="display:none">
+  <div class="brhdr">
+    <div>
+      <div class="brtitle">🚀 DAILY BRIEFING</div>
+      <div class="brsub" id="brsub">แผนผลิตวันนี้</div>
+    </div>
+    <a class="back" href="index.html">← กลับ Dashboard</a>
+  </div>
+
+  <div class="focus">
+    <div class="focus-hd"><span class="pulse"></span>🚨 TOP 3 FOCUS วันนี้ — งานที่ต้องโฟกัสที่สุด</div>
+    <div id="focusBox"></div>
+  </div>
+
+  <div class="sbar" id="sumBar"></div>
+
+  <div class="mgrid">
+    <div class="mc">
+      <div class="mh" style="background:rgba(45,130,232,.1)">
+        <span class="bdg b-c">GD10</span>
+        <span style="font-size:0.78rem;font-weight:700;color:var(--acc)">Dynastar GD10</span>
+      </div>
+      <div class="msc" id="gd10scroll"></div>
+    </div>
+    <div class="mc">
+      <div class="mh" style="background:rgba(139,92,246,.1)">
+        <span class="bdg" style="background:rgba(139,92,246,.2);color:#a78bfa">GX10</span>
+        <span style="font-size:0.78rem;font-weight:700;color:#a78bfa">Heliostar GX10</span>
+      </div>
+      <div class="msc" id="gx10scroll"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+/* ============================================================
+   Config
+   ============================================================ */
+var PLAN_URL = 'plan.json';
+var AUTO_REFRESH_MIN = 10;
+
+var P = null;
+
+/* ============================================================
+   Fetch plan.json
+   ============================================================ */
+function loadPlan(){
+  fetch(PLAN_URL + '?t=' + Date.now())
+    .then(function(res){
+      if(!res.ok) throw new Error('HTTP '+res.status);
+      return res.json();
+    })
+    .then(function(data){
+      P = data;
+      document.getElementById('loadingScreen').classList.add('hide');
+      document.getElementById('errScreen').classList.remove('show');
+      document.getElementById('brApp').style.display = 'flex';
+      renderAll();
+    })
+    .catch(function(err){
+      document.getElementById('loadingScreen').classList.add('hide');
+      document.getElementById('errScreen').classList.add('show');
+      document.getElementById('errMsg').textContent =
+        'โหลดไฟล์ plan.json ไม่สำเร็จ: ' + err.message +
+        ' — ตรวจสอบว่า Apps Script ได้ push plan.json ขึ้น repo แล้ว';
+    });
+}
+
+setInterval(function(){
+  if(document.getElementById('brApp').style.display !== 'none') loadPlan();
+}, AUTO_REFRESH_MIN * 60 * 1000);
+
+loadPlan();
+
+/* ============================================================
+   Helpers
+   ============================================================ */
+function fmt(n){return Math.round(n||0).toLocaleString("th-TH");}
+function isProofJob(j){ return !j.jname || j.jname.indexOf("ไม่พบ")>=0 || j.jname.indexOf("❌")>=0; }
+function hasRealHistory(j){ return !isProofJob(j) && j.avgPctNum > 0; }
+
+/* ============================================================
+   Render
+   ============================================================ */
+function renderAll(){
+  // sub-header — แสดงวันที่ที่ Apps Script export ล่าสุด
+  if(P.updated){
+    document.getElementById('brsub').textContent = 'แผนผลิตวันนี้ — ' + P.updated;
+  }
+  document.getElementById('focusBox').innerHTML = renderFocus();
+  renderSumBar();
+  document.getElementById('gd10scroll').innerHTML =
+    '<div class="slbl">☀ กะ A — เช้า ('+P.gd10A.length+' งาน)</div>' + renderJobs(P.gd10A) +
+    '<div class="slbl">🌙 กะ B — ดึก ('+P.gd10B.length+' งาน)</div>' + renderJobs(P.gd10B);
+  document.getElementById('gx10scroll').innerHTML =
+    '<div class="slbl">☀ กะ A — เช้า ('+P.gx10A.length+' งาน)</div>' + renderJobs(P.gx10A) +
+    '<div class="slbl">🌙 กะ B — ดึก ('+P.gx10B.length+' งาน)</div>' + renderJobs(P.gx10B);
+}
+
+function renderFocus(){
+  if(!P.top3 || P.top3.length===0){
+    return '<div class="focus-empty">✓ ไม่มีงานเสี่ยงสูงเป็นพิเศษวันนี้ — ทำตามแผนปกติได้</div>';
+  }
+  var cards = P.top3.map(function(j,i){
+    var proof = isProofJob(j);
+    var name = proof ? "🆕 ลูกค้ามา Proof งาน" : j.jname;
+    var why;
+    if(proof) why = "งานใหม่ Proof — เป้า " + fmt(j.target) + " ม.";
+    else if(j.avgPctNum > 0.04) why = "เฉลี่ย " + (j.avgPctNum*100).toFixed(1) + "% — เป้า " + fmt(j.target) + " ม.";
+    else if(j.riskScore===3) why = "เสี่ยงสูง — เป้า " + fmt(j.target) + " ม.";
+    else why = "ควรระวัง — เป้า " + fmt(j.target) + " ม.";
+    return '<div class="focus-card"><div class="focus-rank">#'+(i+1)+' • '+j.machine+' '+j.shift+'</div>'+
+      '<div class="focus-item">'+j.item+'</div>'+
+      '<div class="focus-name">'+name+'</div>'+
+      '<div class="focus-why">⚠ '+why+'</div></div>';
+  }).join("");
+  return '<div class="focus-row">'+cards+'</div>';
+}
+
+function renderSumBar(){
+  var sm = P.summary;
+  document.getElementById('sumBar').innerHTML =
+    '<span class="bdg b-x">รวม '+sm.total+' งาน</span>'+
+    '<span class="bdg b-r">🔴 เสี่ยงสูง '+sm.high+'</span>'+
+    '<span class="bdg b-a">🟡 ควรระวัง '+sm.med+'</span>'+
+    '<span class="bdg b-g">🟢 ปกติ '+sm.low+'</span>'+
+    '<span class="bdg b-x">⬜ ไม่มีข้อมูล '+sm.noData+'</span>'+
+    '<span style="color:var(--bdr);margin:0 4px">|</span>'+
+    '<span class="bdg b-c">✂ L1 ตัดได้เลย '+sm.cutOk+'</span>'+
+    '<span class="bdg b-a">⚠ L2 Proof '+sm.proof+'</span>'+
+    '<span class="bdg b-r">✗ L3 QC '+sm.qc+'</span>';
+}
+
+function buildJobCard(j){
+  var proof = isProofJob(j);
+  var hasHist = hasRealHistory(j);
+  var hi, rBdg, rCls;
+  if(proof){ hi="hr"; rBdg="🆕 Proof"; rCls="b-r"; }
+  else if(j.risk.indexOf("🔴")>-1 && hasHist){ hi="hr"; rBdg="🔴 เสี่ยงสูง"; rCls="b-r"; }
+  else if(j.risk.indexOf("🟡")>-1 && hasHist){ hi="ha"; rBdg="🟡 ควรระวัง"; rCls="b-a"; }
+  else if(j.risk.indexOf("🟢")>-1 && hasHist){ hi="hg"; rBdg="🟢 ปกติ"; rCls="b-g"; }
+  else { hi=""; rBdg="ยังไม่มีประวัติ"; rCls="b-x"; }
+
+  var nameHtml = proof
+    ? '<div class="jc-name" style="color:#fca5a5">🆕 ลูกค้ามา Proof งาน</div>'
+    : '<div class="jc-name">'+j.jname+'</div>';
+
+  var statusHtml = "";
+  if(proof){
+    var act = j.action || "รอ Proof Approve ก่อนเริ่ม\n→ แจ้ง QC เตรียมตรวจ Proof";
+    statusHtml = '<div class="jc-action">✅ '+act+'</div>';
+  } else if(!hasHist){
+    statusHtml = '<div class="ni">📊 ยังไม่มีประวัติย้อนหลัง 6 เดือน</div>';
+  } else {
+    if(j.riskNote) statusHtml += '<div class="jc-risk">⚠️ '+j.riskNote+'</div>';
+    if(j.action) statusHtml += '<div class="jc-action">✅ '+j.action+'</div>';
+  }
+
+  var pctDisplay = hasHist
+    ? '<div class="jc-tu">ม. • <span style="color:'+(j.avgPctNum*100>4?"var(--red)":j.avgPctNum*100>2?"var(--yel)":"var(--grn)")+';font-weight:700">'+(j.avgPctNum*100).toFixed(2)+'%</span></div>'
+    : '<div class="jc-tu">ม.</div>';
+
+  var metaHtml = "";
+  if(j.level){
+    var lc = j.level.indexOf("L3")>-1?"#ef4444":j.level.indexOf("L2")>-1?"#f59e0b":"#10b981";
+    var lb = j.level.indexOf("L3")>-1?"rgba(239,68,68,.15)":j.level.indexOf("L2")>-1?"rgba(245,158,11,.15)":"rgba(16,185,129,.15)";
+    metaHtml += '<span class="jc-level" style="background:'+lb+';color:'+lc+'">'+j.level+'</span>';
+  }
+  if(j.note) metaHtml += '<span style="font-size:0.62rem;color:var(--muted)">📝 '+j.note+'</span>';
+  var metaWrap = metaHtml ? '<div class="jc-meta">'+metaHtml+'</div>' : "";
+
+  return '<div class="jc '+hi+'">'+
+    '<div class="jc-top">'+
+      '<div class="jc-left">'+
+        '<span class="jc-id">'+j.item+'</span>'+
+        nameHtml +
+      '</div>'+
+      '<div class="jc-right">'+
+        '<span class="rb '+rCls+'">'+rBdg+'</span>'+
+        '<div class="jc-target">'+(j.target>0?fmt(j.target):"—")+'</div>'+
+        pctDisplay +
+      '</div>'+
+    '</div>'+
+    statusHtml + metaWrap +
+  '</div>';
+}
+
+function renderJobs(list){
+  if(!list || list.length===0) return '<div class="nj">— ไม่มีงานในกะนี้ —</div>';
+  return list.map(buildJobCard).join("");
+}
+</script>
+
+</body>
+</html>
