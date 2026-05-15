@@ -1,109 +1,1130 @@
 {
-  "meta": {
-    "updatedAt": "15 พ.ค. 2569 11:59 น.",
-    "updatedAtISO": "2026-05-15T04:59:04.689Z",
-    "rowsGD10": 275,
-    "rowsGX10": 168
-  },
-  "summary": {
-    "netMetersGD10": 4778951,
-    "netMetersGX10": 4495554,
-    "netMetersTotal": 9274505,
-    "wasteMetersGD10": 240720,
-    "wasteMetersGX10": 177298,
-    "wasteMetersTotal": 418018,
-    "wastePercentGD10": 4.8,
-    "wastePercentGX10": 3.79,
-    "wastePercentTotal": 4.31
-  },
-  "byStatus": {
-    "GD10": {
-      "งานเก่า": {
-        "net": 4331300,
-        "waste": 153620
+  "updated": "พ.ค. 2026 | อัปเดต 15/05 17:31",
+  "updatedISO": "2026-05-15T10:31:09.717Z",
+  "selMonth": 5,
+  "selYear": 2026,
+  "selMonthName": "พ.ค. 2026",
+  "gd10OldNet": 1711250,
+  "gd10OldWaste": 70470,
+  "gd10OldPct": 0.03955166917360753,
+  "gx10OldNet": 1443950,
+  "gx10OldWaste": 30250,
+  "gx10OldPct": 0.020519603852937187,
+  "totalOldNet": 3155200,
+  "totalOldWaste": 100720,
+  "totalOldPct": 0.030934420993144796,
+  "totalNewNet": 164703,
+  "totalNewWaste": 52698,
+  "totalNewPct": 0.24239998896049236,
+  "totalAllNet": 3319903,
+  "totalAllWaste": 153418,
+  "totalAllPct": 0.044170406363247164,
+  "kanong": {
+    "name": "Kanong",
+    "net": 808450,
+    "waste": 27020,
+    "wasteSU": 18650,
+    "wasteSC": 8370,
+    "jobs": 42,
+    "pct": 0.03234107747734808,
+    "topCustomers": [
+      {
+        "name": "Perfect Companion",
+        "totalNet": 925700,
+        "totalWaste": 44520,
+        "totalPct": 4.588649996907917,
+        "opNet": 236600,
+        "opWaste": 8720,
+        "opJobs": 10,
+        "opPct": 3.55454100766346,
+        "netShare": 25.55903640488279,
+        "wasteShare": 19.58670260557053
       },
-      "งานใหม่": {
-        "net": 447651,
-        "waste": 87100
-      }
-    },
-    "GX10": {
-      "งานเก่า": {
-        "net": 4137151,
-        "waste": 113400
+      {
+        "name": "I.P. One Co., Ltd.",
+        "totalNet": 584500,
+        "totalWaste": 3600,
+        "totalPct": 0.612140792382248,
+        "opNet": 0,
+        "opWaste": 0,
+        "opJobs": 0,
+        "opPct": 0,
+        "netShare": 0,
+        "wasteShare": 0
       },
-      "งานใหม่": {
-        "net": 358403,
-        "waste": 63898
+      {
+        "name": "Unicord",
+        "totalNet": 549800,
+        "totalWaste": 22950,
+        "totalPct": 4.006983849847228,
+        "opNet": 216300,
+        "opWaste": 8050,
+        "opJobs": 12,
+        "opPct": 3.58814352574103,
+        "netShare": 39.341578755911236,
+        "wasteShare": 35.07625272331155
+      },
+      {
+        "name": "บริษัท ข้าว ซี.พี. จำกัด",
+        "totalNet": 268150,
+        "totalWaste": 1850,
+        "totalPct": 0.6851851851851852,
+        "opNet": 0,
+        "opWaste": 0,
+        "opJobs": 0,
+        "opPct": 0,
+        "netShare": 0,
+        "wasteShare": 0
+      },
+      {
+        "name": "บริษัท ไอ-เทล & ไทยรวมสิน จำกัด",
+        "totalNet": 252550,
+        "totalWaste": 3400,
+        "totalPct": 1.3283844500879076,
+        "opNet": 134650,
+        "opWaste": 2000,
+        "opJobs": 5,
+        "opPct": 1.4635931211123308,
+        "netShare": 53.31617501484855,
+        "wasteShare": 58.82352941176471
+      },
+      {
+        "name": "TPN Medical",
+        "totalNet": 191700,
+        "totalWaste": 1500,
+        "totalPct": 0.7763975155279503,
+        "opNet": 0,
+        "opWaste": 0,
+        "opJobs": 0,
+        "opPct": 0,
+        "netShare": 0,
+        "wasteShare": 0
+      },
+      {
+        "name": "Tyson Poultry (Thailand) Limited",
+        "totalNet": 127550,
+        "totalWaste": 2100,
+        "totalPct": 1.619745468569225,
+        "opNet": 98150,
+        "opWaste": 500,
+        "opJobs": 3,
+        "opPct": 0.5068423720223011,
+        "netShare": 76.9502156017248,
+        "wasteShare": 23.809523809523807
+      },
+      {
+        "name": "บริษัท ทรอปิคอลแคนนิ่ง (ประเทศไทย) จำกัด (มหาชน)",
+        "totalNet": 93200,
+        "totalWaste": 2750,
+        "totalPct": 2.86607608129234,
+        "opNet": 67400,
+        "opWaste": 2150,
+        "opJobs": 3,
+        "opPct": 3.0913012221423437,
+        "netShare": 72.3175965665236,
+        "wasteShare": 78.18181818181819
+      },
+      {
+        "name": "FUKUYO TECHNOS CO., LTD.",
+        "totalNet": 65350,
+        "totalWaste": 5000,
+        "totalPct": 7.107320540156362,
+        "opNet": 31350,
+        "opWaste": 3000,
+        "opJobs": 5,
+        "opPct": 8.73362445414847,
+        "netShare": 47.972456006120886,
+        "wasteShare": 60
+      },
+      {
+        "name": "CFP Co.,Ltd.",
+        "totalNet": 22000,
+        "totalWaste": 3400,
+        "totalPct": 13.385826771653544,
+        "opNet": 8000,
+        "opWaste": 1200,
+        "opJobs": 1,
+        "opPct": 13.043478260869565,
+        "netShare": 36.36363636363637,
+        "wasteShare": 35.294117647058826
       }
-    }
+    ]
   },
-  "byOperator": [
+  "wittaya": {
+    "name": "Wittaya",
+    "net": 902800,
+    "waste": 43450,
+    "wasteSU": 36700,
+    "wasteSC": 6750,
+    "jobs": 57,
+    "pct": 0.045918097754293265,
+    "topCustomers": [
+      {
+        "name": "Perfect Companion",
+        "totalNet": 925700,
+        "totalWaste": 44520,
+        "totalPct": 4.588649996907917,
+        "opNet": 315100,
+        "opWaste": 15000,
+        "opJobs": 15,
+        "opPct": 4.544077552256892,
+        "netShare": 34.039105541752186,
+        "wasteShare": 33.692722371967655
+      },
+      {
+        "name": "I.P. One Co., Ltd.",
+        "totalNet": 584500,
+        "totalWaste": 3600,
+        "totalPct": 0.612140792382248,
+        "opNet": 0,
+        "opWaste": 0,
+        "opJobs": 0,
+        "opPct": 0,
+        "netShare": 0,
+        "wasteShare": 0
+      },
+      {
+        "name": "Unicord",
+        "totalNet": 549800,
+        "totalWaste": 22950,
+        "totalPct": 4.006983849847228,
+        "opNet": 333500,
+        "opWaste": 14900,
+        "opJobs": 20,
+        "opPct": 4.2766934557979335,
+        "netShare": 60.65842124408876,
+        "wasteShare": 64.92374727668845
+      },
+      {
+        "name": "บริษัท ข้าว ซี.พี. จำกัด",
+        "totalNet": 268150,
+        "totalWaste": 1850,
+        "totalPct": 0.6851851851851852,
+        "opNet": 0,
+        "opWaste": 0,
+        "opJobs": 0,
+        "opPct": 0,
+        "netShare": 0,
+        "wasteShare": 0
+      },
+      {
+        "name": "บริษัท ไอ-เทล & ไทยรวมสิน จำกัด",
+        "totalNet": 252550,
+        "totalWaste": 3400,
+        "totalPct": 1.3283844500879076,
+        "opNet": 117900,
+        "opWaste": 1400,
+        "opJobs": 3,
+        "opPct": 1.173512154233026,
+        "netShare": 46.68382498515145,
+        "wasteShare": 41.17647058823529
+      },
+      {
+        "name": "TPN Medical",
+        "totalNet": 191700,
+        "totalWaste": 1500,
+        "totalPct": 0.7763975155279503,
+        "opNet": 0,
+        "opWaste": 0,
+        "opJobs": 0,
+        "opPct": 0,
+        "netShare": 0,
+        "wasteShare": 0
+      },
+      {
+        "name": "Tyson Poultry (Thailand) Limited",
+        "totalNet": 127550,
+        "totalWaste": 2100,
+        "totalPct": 1.619745468569225,
+        "opNet": 29400,
+        "opWaste": 1600,
+        "opJobs": 4,
+        "opPct": 5.161290322580645,
+        "netShare": 23.049784398275186,
+        "wasteShare": 76.19047619047619
+      },
+      {
+        "name": "บริษัท ทรอปิคอลแคนนิ่ง (ประเทศไทย) จำกัด (มหาชน)",
+        "totalNet": 93200,
+        "totalWaste": 2750,
+        "totalPct": 2.86607608129234,
+        "opNet": 25800,
+        "opWaste": 600,
+        "opJobs": 1,
+        "opPct": 2.272727272727273,
+        "netShare": 27.682403433476395,
+        "wasteShare": 21.818181818181817
+      },
+      {
+        "name": "FUKUYO TECHNOS CO., LTD.",
+        "totalNet": 65350,
+        "totalWaste": 5000,
+        "totalPct": 7.107320540156362,
+        "opNet": 34000,
+        "opWaste": 2000,
+        "opJobs": 3,
+        "opPct": 5.555555555555555,
+        "netShare": 52.027543993879114,
+        "wasteShare": 40
+      },
+      {
+        "name": "CFP Co.,Ltd.",
+        "totalNet": 22000,
+        "totalWaste": 3400,
+        "totalPct": 13.385826771653544,
+        "opNet": 4500,
+        "opWaste": 500,
+        "opJobs": 1,
+        "opPct": 10,
+        "netShare": 20.454545454545457,
+        "wasteShare": 14.705882352941178
+      }
+    ]
+  },
+  "chan": {
+    "name": "Chan",
+    "net": 807950,
+    "waste": 17250,
+    "wasteSU": 13200,
+    "wasteSC": 4050,
+    "jobs": 21,
+    "pct": 0.020904023267086767,
+    "topCustomers": [
+      {
+        "name": "Perfect Companion",
+        "totalNet": 925700,
+        "totalWaste": 44520,
+        "totalPct": 4.588649996907917,
+        "opNet": 176600,
+        "opWaste": 11500,
+        "opJobs": 12,
+        "opPct": 6.113769271664009,
+        "netShare": 19.077454898995356,
+        "wasteShare": 25.83108715184187
+      },
+      {
+        "name": "I.P. One Co., Ltd.",
+        "totalNet": 584500,
+        "totalWaste": 3600,
+        "totalPct": 0.612140792382248,
+        "opNet": 360700,
+        "opWaste": 2700,
+        "opJobs": 5,
+        "opPct": 0.7429829389102918,
+        "netShare": 61.71086398631309,
+        "wasteShare": 75
+      },
+      {
+        "name": "Unicord",
+        "totalNet": 549800,
+        "totalWaste": 22950,
+        "totalPct": 4.006983849847228,
+        "opNet": 0,
+        "opWaste": 0,
+        "opJobs": 0,
+        "opPct": 0,
+        "netShare": 0,
+        "wasteShare": 0
+      },
+      {
+        "name": "บริษัท ข้าว ซี.พี. จำกัด",
+        "totalNet": 268150,
+        "totalWaste": 1850,
+        "totalPct": 0.6851851851851852,
+        "opNet": 124150,
+        "opWaste": 1850,
+        "opJobs": 2,
+        "opPct": 1.4682539682539681,
+        "netShare": 46.29871340667537,
+        "wasteShare": 100
+      },
+      {
+        "name": "บริษัท ไอ-เทล & ไทยรวมสิน จำกัด",
+        "totalNet": 252550,
+        "totalWaste": 3400,
+        "totalPct": 1.3283844500879076,
+        "opNet": 0,
+        "opWaste": 0,
+        "opJobs": 0,
+        "opPct": 0,
+        "netShare": 0,
+        "wasteShare": 0
+      },
+      {
+        "name": "TPN Medical",
+        "totalNet": 191700,
+        "totalWaste": 1500,
+        "totalPct": 0.7763975155279503,
+        "opNet": 146500,
+        "opWaste": 1200,
+        "opJobs": 2,
+        "opPct": 0.8124576844955992,
+        "netShare": 76.42149191444966,
+        "wasteShare": 80
+      },
+      {
+        "name": "Tyson Poultry (Thailand) Limited",
+        "totalNet": 127550,
+        "totalWaste": 2100,
+        "totalPct": 1.619745468569225,
+        "opNet": 0,
+        "opWaste": 0,
+        "opJobs": 0,
+        "opPct": 0,
+        "netShare": 0,
+        "wasteShare": 0
+      },
+      {
+        "name": "บริษัท ทรอปิคอลแคนนิ่ง (ประเทศไทย) จำกัด (มหาชน)",
+        "totalNet": 93200,
+        "totalWaste": 2750,
+        "totalPct": 2.86607608129234,
+        "opNet": 0,
+        "opWaste": 0,
+        "opJobs": 0,
+        "opPct": 0,
+        "netShare": 0,
+        "wasteShare": 0
+      },
+      {
+        "name": "FUKUYO TECHNOS CO., LTD.",
+        "totalNet": 65350,
+        "totalWaste": 5000,
+        "totalPct": 7.107320540156362,
+        "opNet": 0,
+        "opWaste": 0,
+        "opJobs": 0,
+        "opPct": 0,
+        "netShare": 0,
+        "wasteShare": 0
+      },
+      {
+        "name": "CFP Co.,Ltd.",
+        "totalNet": 22000,
+        "totalWaste": 3400,
+        "totalPct": 13.385826771653544,
+        "opNet": 0,
+        "opWaste": 0,
+        "opJobs": 0,
+        "opPct": 0,
+        "netShare": 0,
+        "wasteShare": 0
+      }
+    ]
+  },
+  "naret": {
+    "name": "Naret",
+    "net": 636000,
+    "waste": 13000,
+    "wasteSU": 12200,
+    "wasteSC": 800,
+    "jobs": 23,
+    "pct": 0.020030816640986132,
+    "topCustomers": [
+      {
+        "name": "Perfect Companion",
+        "totalNet": 925700,
+        "totalWaste": 44520,
+        "totalPct": 4.588649996907917,
+        "opNet": 197400,
+        "opWaste": 9300,
+        "opJobs": 15,
+        "opPct": 4.499274310595065,
+        "netShare": 21.324403154369666,
+        "wasteShare": 20.889487870619945
+      },
+      {
+        "name": "I.P. One Co., Ltd.",
+        "totalNet": 584500,
+        "totalWaste": 3600,
+        "totalPct": 0.612140792382248,
+        "opNet": 223800,
+        "opWaste": 900,
+        "opJobs": 3,
+        "opPct": 0.4005340453938585,
+        "netShare": 38.289136013686914,
+        "wasteShare": 25
+      },
+      {
+        "name": "Unicord",
+        "totalNet": 549800,
+        "totalWaste": 22950,
+        "totalPct": 4.006983849847228,
+        "opNet": 0,
+        "opWaste": 0,
+        "opJobs": 0,
+        "opPct": 0,
+        "netShare": 0,
+        "wasteShare": 0
+      },
+      {
+        "name": "บริษัท ข้าว ซี.พี. จำกัด",
+        "totalNet": 268150,
+        "totalWaste": 1850,
+        "totalPct": 0.6851851851851852,
+        "opNet": 144000,
+        "opWaste": 0,
+        "opJobs": 1,
+        "opPct": 0,
+        "netShare": 53.701286593324625,
+        "wasteShare": 0
+      },
+      {
+        "name": "บริษัท ไอ-เทล & ไทยรวมสิน จำกัด",
+        "totalNet": 252550,
+        "totalWaste": 3400,
+        "totalPct": 1.3283844500879076,
+        "opNet": 0,
+        "opWaste": 0,
+        "opJobs": 0,
+        "opPct": 0,
+        "netShare": 0,
+        "wasteShare": 0
+      },
+      {
+        "name": "TPN Medical",
+        "totalNet": 191700,
+        "totalWaste": 1500,
+        "totalPct": 0.7763975155279503,
+        "opNet": 45200,
+        "opWaste": 300,
+        "opJobs": 1,
+        "opPct": 0.6593406593406593,
+        "netShare": 23.57850808555034,
+        "wasteShare": 20
+      },
+      {
+        "name": "Tyson Poultry (Thailand) Limited",
+        "totalNet": 127550,
+        "totalWaste": 2100,
+        "totalPct": 1.619745468569225,
+        "opNet": 0,
+        "opWaste": 0,
+        "opJobs": 0,
+        "opPct": 0,
+        "netShare": 0,
+        "wasteShare": 0
+      },
+      {
+        "name": "บริษัท ทรอปิคอลแคนนิ่ง (ประเทศไทย) จำกัด (มหาชน)",
+        "totalNet": 93200,
+        "totalWaste": 2750,
+        "totalPct": 2.86607608129234,
+        "opNet": 0,
+        "opWaste": 0,
+        "opJobs": 0,
+        "opPct": 0,
+        "netShare": 0,
+        "wasteShare": 0
+      },
+      {
+        "name": "FUKUYO TECHNOS CO., LTD.",
+        "totalNet": 65350,
+        "totalWaste": 5000,
+        "totalPct": 7.107320540156362,
+        "opNet": 0,
+        "opWaste": 0,
+        "opJobs": 0,
+        "opPct": 0,
+        "netShare": 0,
+        "wasteShare": 0
+      },
+      {
+        "name": "CFP Co.,Ltd.",
+        "totalNet": 22000,
+        "totalWaste": 3400,
+        "totalPct": 13.385826771653544,
+        "opNet": 9500,
+        "opWaste": 1700,
+        "opJobs": 2,
+        "opPct": 15.178571428571427,
+        "netShare": 43.18181818181818,
+        "wasteShare": 50
+      }
+    ]
+  },
+  "yoy": [
     {
-      "name": "Wittaya",
-      "net": 2545201,
-      "waste": 134050,
-      "wastePercent": 5
+      "month": "ม.ค.",
+      "prevTotal": 6387102,
+      "thisTotal": 5736358
     },
     {
-      "name": "Chan",
-      "net": 2304003,
-      "waste": 86748,
-      "wastePercent": 3.63
+      "month": "ก.พ.",
+      "prevTotal": 5066109,
+      "thisTotal": 6130352
     },
     {
-      "name": "Kanong",
-      "net": 2233750,
-      "waste": 106670,
-      "wastePercent": 4.56
+      "month": "มี.ค.",
+      "prevTotal": 5582256,
+      "thisTotal": 6913884
     },
     {
-      "name": "Naret",
-      "net": 2191551,
-      "waste": 90550,
-      "wastePercent": 3.97
+      "month": "เม.ย.",
+      "prevTotal": 5002006,
+      "thisTotal": 5802052
+    },
+    {
+      "month": "พ.ค.",
+      "prevTotal": 5777100,
+      "thisTotal": 3018652
+    },
+    {
+      "month": "มิ.ย.",
+      "prevTotal": 4007851,
+      "thisTotal": 0
+    },
+    {
+      "month": "ก.ค.",
+      "prevTotal": 6627237,
+      "thisTotal": 0
+    },
+    {
+      "month": "ส.ค.",
+      "prevTotal": 6152281,
+      "thisTotal": 0
+    },
+    {
+      "month": "ก.ย.",
+      "prevTotal": 4943332,
+      "thisTotal": 0
+    },
+    {
+      "month": "ต.ค.",
+      "prevTotal": 5689600,
+      "thisTotal": 0
+    },
+    {
+      "month": "พ.ย.",
+      "prevTotal": 6687322,
+      "thisTotal": 0
+    },
+    {
+      "month": "ธ.ค.",
+      "prevTotal": 7049851,
+      "thisTotal": 0
     }
   ],
-  "topCustomers": [
-    {
-      "name": "Unicord",
-      "meters": 2025350
-    },
+  "top10": [
     {
       "name": "Perfect Companion",
-      "meters": 1700752
-    },
-    {
-      "name": "บริษัท ข้าว ซี.พี. จำกัด",
-      "meters": 1643550
+      "net": 925700,
+      "waste": 44520,
+      "jobs": 52,
+      "wastePerJob": 856,
+      "pct": 4.588649996907917
     },
     {
       "name": "I.P. One Co., Ltd.",
-      "meters": 943000
+      "net": 584500,
+      "waste": 3600,
+      "jobs": 8,
+      "wastePerJob": 450,
+      "pct": 0.612140792382248
     },
     {
-      "name": "NEO FACTORY CO.,LTD.",
-      "meters": 556001
+      "name": "Unicord",
+      "net": 549800,
+      "waste": 22950,
+      "jobs": 32,
+      "wastePerJob": 717,
+      "pct": 4.006983849847228
+    },
+    {
+      "name": "บริษัท ข้าว ซี.พี. จำกัด",
+      "net": 268150,
+      "waste": 1850,
+      "jobs": 3,
+      "wastePerJob": 617,
+      "pct": 0.6851851851851852
     },
     {
       "name": "บริษัท ไอ-เทล & ไทยรวมสิน จำกัด",
-      "meters": 484500
+      "net": 252550,
+      "waste": 3400,
+      "jobs": 8,
+      "wastePerJob": 425,
+      "pct": 1.3283844500879076
     },
     {
       "name": "TPN Medical",
-      "meters": 218900
-    },
-    {
-      "name": "F&N Dairies (Thailand) Limited",
-      "meters": 208600
-    },
-    {
-      "name": "บริษัท สปริงคิทเช่น จำกัด",
-      "meters": 207450
+      "net": 191700,
+      "waste": 1500,
+      "jobs": 3,
+      "wastePerJob": 500,
+      "pct": 0.7763975155279503
     },
     {
       "name": "Tyson Poultry (Thailand) Limited",
-      "meters": 173050
+      "net": 127550,
+      "waste": 2100,
+      "jobs": 7,
+      "wastePerJob": 300,
+      "pct": 1.619745468569225
+    },
+    {
+      "name": "บริษัท ทรอปิคอลแคนนิ่ง (ประเทศไทย) จำกัด (มหาชน)",
+      "net": 93200,
+      "waste": 2750,
+      "jobs": 4,
+      "wastePerJob": 688,
+      "pct": 2.86607608129234
+    },
+    {
+      "name": "FUKUYO TECHNOS CO., LTD.",
+      "net": 65350,
+      "waste": 5000,
+      "jobs": 8,
+      "wastePerJob": 625,
+      "pct": 7.107320540156362
+    },
+    {
+      "name": "CFP Co.,Ltd.",
+      "net": 22000,
+      "waste": 3400,
+      "jobs": 4,
+      "wastePerJob": 850,
+      "pct": 13.385826771653544
     }
-  ]
+  ],
+  "wasteTop6": [
+    {
+      "name": "จับมาร์ค & ปรับภาพ",
+      "total": 30900,
+      "pct": 0.9490405169660189
+    },
+    {
+      "name": "ปรับสีพิเศษ (เก่า)",
+      "total": 21300,
+      "pct": 0.6541929777144402
+    },
+    {
+      "name": "ปรับสีCMYK",
+      "total": 13350,
+      "pct": 0.4100223592717266
+    },
+    {
+      "name": "ช่างซ่อม",
+      "total": 3500,
+      "pct": 0.1074964986854714
+    },
+    {
+      "name": "S-ฟิล์มขาด",
+      "total": 3100,
+      "pct": 0.09521118454998895
+    },
+    {
+      "name": "S-ม้วนมาร์คหลุด",
+      "total": 2470,
+      "pct": 0.07586181478660409
+    }
+  ],
+  "heatmaps": {
+    "causes": [
+      "จับมาร์ค & ปรับภาพ",
+      "ปรับสีพิเศษ (เก่า)",
+      "ปรับสีCMYK",
+      "ช่างซ่อม",
+      "S-ฟิล์มขาด",
+      "S-ม้วนมาร์คหลุด"
+    ],
+    "colsA": [
+      "Kanong",
+      "Wittaya",
+      "Chan",
+      "Naret"
+    ],
+    "matA": [
+      [
+        0.92,
+        1.37,
+        0.65,
+        0.74
+      ],
+      [
+        0.94,
+        1.42,
+        0,
+        0
+      ],
+      [
+        0.37,
+        1.08,
+        0,
+        0
+      ],
+      [
+        0.35,
+        0.06,
+        0,
+        0
+      ],
+      [
+        0.04,
+        0.13,
+        0.16,
+        0.05
+      ],
+      [
+        0.2,
+        0.08,
+        0,
+        0
+      ]
+    ],
+    "colsB": [
+      "Perfect Companion",
+      "I.P. One Co., Ltd.",
+      "Unicord",
+      "บริษัท ข้าว ซี.พี. จำกัด",
+      "บริษัท ไอ-เทล & ไทยรวมสิน จำกัด",
+      "TPN Medical",
+      "Tyson Poultry (Thailand) Limited",
+      "บริษัท ทรอปิคอลแคนนิ่ง (ประเทศไทย) จำกัด (มหาชน)",
+      "FUKUYO TECHNOS CO., LTD.",
+      "CFP Co.,Ltd."
+    ],
+    "matB": [
+      [
+        1.39,
+        0.19,
+        1.14,
+        0.07,
+        0.47,
+        0.41,
+        0.62,
+        1.15,
+        2.56,
+        3.94
+      ],
+      [
+        0.64,
+        0,
+        1.07,
+        0,
+        0.43,
+        0,
+        0.54,
+        1.72,
+        2.42,
+        1.97
+      ],
+      [
+        0.47,
+        0,
+        0.88,
+        0,
+        0.35,
+        0,
+        0.46,
+        0,
+        1.42,
+        0.79
+      ],
+      [
+        0.12,
+        0,
+        0.4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0.29,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0.09,
+        0,
+        0.24,
+        0,
+        0.08,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  "leaveData": [
+    {
+      "name": "ธงชัย นาคทอง",
+      "sick": 1,
+      "biz": 0,
+      "vac": 1,
+      "absent": 0,
+      "unpaid": 0,
+      "total": 2
+    },
+    {
+      "name": "ชาญ",
+      "sick": 0,
+      "biz": 0,
+      "vac": 1,
+      "absent": 0,
+      "unpaid": 0,
+      "total": 1
+    },
+    {
+      "name": "วิทยา",
+      "sick": 1,
+      "biz": 0,
+      "vac": 0,
+      "absent": 0,
+      "unpaid": 0,
+      "total": 1
+    },
+    {
+      "name": "วันเฉลิม",
+      "sick": 0,
+      "biz": 0,
+      "vac": 1,
+      "absent": 0,
+      "unpaid": 0,
+      "total": 1
+    },
+    {
+      "name": "คะนอง",
+      "sick": 0,
+      "biz": 0,
+      "vac": 1,
+      "absent": 0,
+      "unpaid": 0,
+      "total": 1
+    },
+    {
+      "name": "บุญเสริม",
+      "sick": 0,
+      "biz": 0,
+      "vac": 1,
+      "absent": 0,
+      "unpaid": 0,
+      "total": 1
+    },
+    {
+      "name": "ภูเบศ",
+      "sick": 0,
+      "biz": 0,
+      "vac": 1,
+      "absent": 0,
+      "unpaid": 0,
+      "total": 1
+    },
+    {
+      "name": "ภานุวัตน์",
+      "sick": 1,
+      "biz": 0,
+      "vac": 0,
+      "absent": 0,
+      "unpaid": 0,
+      "total": 1
+    },
+    {
+      "name": "ศิลา",
+      "sick": 0,
+      "biz": 0,
+      "vac": 0.5,
+      "absent": 0,
+      "unpaid": 0,
+      "total": 0.5
+    }
+  ],
+  "otData": [
+    {
+      "name": "เบญจพล",
+      "count": 1,
+      "status": "✅ ปกติ"
+    },
+    {
+      "name": "อรรถชัย",
+      "count": 1,
+      "status": "✅ ปกติ"
+    },
+    {
+      "name": "ศักดิ์ระพี",
+      "count": 1,
+      "status": "✅ ปกติ"
+    },
+    {
+      "name": "ศิลาออก",
+      "count": 1,
+      "status": "✅ ปกติ"
+    },
+    {
+      "name": "บุญเสริม ออก",
+      "count": 1,
+      "status": "✅ ปกติ"
+    },
+    {
+      "name": "วันเฉลิม",
+      "count": 1,
+      "status": "✅ ปกติ"
+    },
+    {
+      "name": "นัฐพงษ์",
+      "count": 1,
+      "status": "✅ ปกติ"
+    }
+  ],
+  "otTitle": "OT สัปดาห์นี้ — 11/5/2026 - 17/5/2026",
+  "planSummary": {
+    "total": 17,
+    "high": 1,
+    "med": 2,
+    "low": 2,
+    "noData": 12,
+    "cutOk": 5,
+    "proof": 0,
+    "qc": 12,
+    "today": 17,
+    "tomorrow": 0,
+    "gd10Today": 256900,
+    "gx10Today": 270000
+  },
+  "planTopFocus": {
+    "machine": "GD10",
+    "shift": "A (เช้า)",
+    "item": "G0006333",
+    "jname": "50063838-BAGP,MUCNX,US,MIX BERRY 40S",
+    "date": "วันนี้"
+  },
+  "complaints": {
+    "inside": 12,
+    "outside": 3,
+    "rows": [
+      {
+        "date": "12/01/2026",
+        "type": "ภายใน",
+        "dept": "ขนส่งภายใน",
+        "subject": "แม่พิมพ์มีรอยกระแทกจากงารถโฟล์คลิฟท์ ",
+        "cause": "",
+        "response": ""
+      },
+      {
+        "date": "28/01/2026",
+        "type": "ภายใน",
+        "dept": "ขนส่งภายใน",
+        "subject": "ม้วนฟิล์มเกิดรอยกระแทกจากงารถโฟล์คลิฟท์",
+        "cause": "",
+        "response": ""
+      },
+      {
+        "date": "29/01/2026",
+        "type": "ภายใน",
+        "dept": "Laminate",
+        "subject": "ไม่กรีดปัญหางานออกตามที่ระบุไปในใบติดม้วน ",
+        "cause": "",
+        "response": ""
+      },
+      {
+        "date": "02/02/2026",
+        "type": "ภายใน",
+        "dept": "ขนส่งภายใน",
+        "subject": "ตักม้วนฟิล์มส่งผิดพื้น",
+        "cause": "",
+        "response": ""
+      },
+      {
+        "date": "02/02/2026",
+        "type": "ภายใน",
+        "dept": "ขนส่งภายใน",
+        "subject": "กล่องฟิล์มมีรอยกระแทกจากงารถโฟลค์ลิฟท์",
+        "cause": "",
+        "response": ""
+      },
+      {
+        "date": "07/03/2026",
+        "type": "ภายใน",
+        "dept": "ขนส่งภายใน",
+        "subject": "แม่พิมพ์เป็นรอยกระแทกจากการขนส่ง ",
+        "cause": "",
+        "response": ""
+      },
+      {
+        "date": "13/03/2026",
+        "type": "ภายใน",
+        "dept": "ขนส่งภายใน",
+        "subject": "ฟิล์มเป็นรอยกระแทกจากการขนส่ง ",
+        "cause": "",
+        "response": ""
+      },
+      {
+        "date": "13/03/2026",
+        "type": "ภายใน",
+        "dept": "Stor RM",
+        "subject": "ระบุฟิล์มส่งผิดพื้นที่ ",
+        "cause": "",
+        "response": ""
+      },
+      {
+        "date": "13/03/2026",
+        "type": "ภายใน",
+        "dept": "ขนส่งภายใน",
+        "subject": "แผนกขนส่งภายในไม่ตักแม่พิมพ์ส่ง",
+        "cause": "",
+        "response": ""
+      },
+      {
+        "date": "29/03/2026",
+        "type": "ภายใน",
+        "dept": "Blowfilm",
+        "subject": "เกิดปัญหาฟิล์มไหลในระหว่างผลิต ",
+        "cause": "",
+        "response": ""
+      },
+      {
+        "date": "23/04/2026",
+        "type": "ภายใน",
+        "dept": "ขนส่งภายใน",
+        "subject": "แจ้งตักแม่พิมพ์ส่งไปยังฝั่งFlex2 แม่พิมพ์ยังไม่จุดหมายที่แจ้งส่ง  ",
+        "cause": "",
+        "response": ""
+      },
+      {
+        "date": "30/04/2026",
+        "type": "ภายใน",
+        "dept": "ขนส่งภายใน",
+        "subject": "ม้วนฟิล์มที่ใช้ผลิตงานมีรอยกระแทกจากกระบวนการขนส่ง ",
+        "cause": "",
+        "response": ""
+      },
+      {
+        "date": "23/01/2026",
+        "type": "ภายนอก",
+        "dept": "Dong Yun ",
+        "subject": "ปัญหาแม่พิมพ์ใหม่เกิดปัญหาตามด",
+        "cause": "",
+        "response": ""
+      },
+      {
+        "date": "26/02/2026",
+        "type": "ภายนอก",
+        "dept": "Dong Yun ",
+        "subject": "เจาะแม่พิมพ์ไม่ตรงตาม INKJET",
+        "cause": "",
+        "response": ""
+      },
+      {
+        "date": "02/03/2026",
+        "type": "ภายนอก",
+        "dept": "Dong Yun ",
+        "subject": "ออก Inkjet Proof ไม่ตรงกับFile AW",
+        "cause": "",
+        "response": ""
+      }
+    ]
+  }
 }
