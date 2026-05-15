@@ -1,0 +1,109 @@
+{
+  "meta": {
+    "updatedAt": "15 พ.ค. 2569 11:59 น.",
+    "updatedAtISO": "2026-05-15T04:59:04.689Z",
+    "rowsGD10": 275,
+    "rowsGX10": 168
+  },
+  "summary": {
+    "netMetersGD10": 4778951,
+    "netMetersGX10": 4495554,
+    "netMetersTotal": 9274505,
+    "wasteMetersGD10": 240720,
+    "wasteMetersGX10": 177298,
+    "wasteMetersTotal": 418018,
+    "wastePercentGD10": 4.8,
+    "wastePercentGX10": 3.79,
+    "wastePercentTotal": 4.31
+  },
+  "byStatus": {
+    "GD10": {
+      "งานเก่า": {
+        "net": 4331300,
+        "waste": 153620
+      },
+      "งานใหม่": {
+        "net": 447651,
+        "waste": 87100
+      }
+    },
+    "GX10": {
+      "งานเก่า": {
+        "net": 4137151,
+        "waste": 113400
+      },
+      "งานใหม่": {
+        "net": 358403,
+        "waste": 63898
+      }
+    }
+  },
+  "byOperator": [
+    {
+      "name": "Wittaya",
+      "net": 2545201,
+      "waste": 134050,
+      "wastePercent": 5
+    },
+    {
+      "name": "Chan",
+      "net": 2304003,
+      "waste": 86748,
+      "wastePercent": 3.63
+    },
+    {
+      "name": "Kanong",
+      "net": 2233750,
+      "waste": 106670,
+      "wastePercent": 4.56
+    },
+    {
+      "name": "Naret",
+      "net": 2191551,
+      "waste": 90550,
+      "wastePercent": 3.97
+    }
+  ],
+  "topCustomers": [
+    {
+      "name": "Unicord",
+      "meters": 2025350
+    },
+    {
+      "name": "Perfect Companion",
+      "meters": 1700752
+    },
+    {
+      "name": "บริษัท ข้าว ซี.พี. จำกัด",
+      "meters": 1643550
+    },
+    {
+      "name": "I.P. One Co., Ltd.",
+      "meters": 943000
+    },
+    {
+      "name": "NEO FACTORY CO.,LTD.",
+      "meters": 556001
+    },
+    {
+      "name": "บริษัท ไอ-เทล & ไทยรวมสิน จำกัด",
+      "meters": 484500
+    },
+    {
+      "name": "TPN Medical",
+      "meters": 218900
+    },
+    {
+      "name": "F&N Dairies (Thailand) Limited",
+      "meters": 208600
+    },
+    {
+      "name": "บริษัท สปริงคิทเช่น จำกัด",
+      "meters": 207450
+    },
+    {
+      "name": "Tyson Poultry (Thailand) Limited",
+      "meters": 173050
+    }
+  ]
+}
